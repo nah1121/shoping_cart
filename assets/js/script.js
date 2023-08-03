@@ -16,21 +16,21 @@ function displayProducts(products) {
             <h1 id="name">${products[x].name}</h1><br>
             <img src='assets/img/${products[x].image}' width="200px height="200px""/><br>
             <h3>Price: ${products[x].price}</h6>
-            <button class="ibtn" onclick="${console.log("helo")}">Add To Chart</button>
+            <button class="ibtn" onclick="atc(${x})">Add To Chart</button>
         </div>        
     `;
   }
 }
 
-// function atc(key){
-//   if(products[key] == null){
-//       // copy product from list to cart
-//       products[key].quantity = 1;
-//   }
+function atc(key){
+  if(products[key] == null){
+      // copy product from list to cart
+      products[key].quantity = 1;
+  }
 
-//   // this function calls a process which adds product to cart menu
-//   reloadCart();
-// }
+  // this function calls a process which adds product to cart menu
+  reloadCart();
+}
 
 let items = document.getElementById("items")
 
