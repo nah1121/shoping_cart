@@ -216,13 +216,67 @@ p{
     z-index: 999;
 }
 
+#conts1{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 0.9fr;
+  color: #E3E7E8;
+}
+
+#btnss{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-self: flex-start;
+}
+
+#btnss button{
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  background: #040f16;
+  color: #f5f5f5;
+
+}
+
+#btnss button:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px 0px #2e2e2e3a;
+}
+
+#imgs img{
+  width: 100px;
+  height: 100px;
+}
 
 
+.disp{
+  display: flex;
+  font-size: 30px;
+  color: #E3E7E8;
+  align-self: flex-end;
+  justify-self: flex-end;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
 
+.quantity{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-self: flex-start;
 
-
-
-
+}
 
 
 
@@ -249,7 +303,7 @@ p{
 
 /* The sidepanel menu */
 .sidepanel {
-    height: 60vh; /* Specify a height */
+    height: 70vh; /* Specify a height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
